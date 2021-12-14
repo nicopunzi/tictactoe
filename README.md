@@ -1,4 +1,4 @@
-# Tic-Tac-Toe
+# TicTacToe
 
 This is a sample REST API application for tic tac toe game 
 
