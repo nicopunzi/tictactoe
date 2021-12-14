@@ -42,7 +42,7 @@ class TicTacApiController extends Controller
 	}
     
    	/**
-	 * Update the game.
+	 * play to move.
 	 */
 	public function play_move( Request $request, Game $game )
 	{
@@ -78,13 +78,14 @@ class TicTacApiController extends Controller
 
 	}
 
+	/**
+	 * check to test if the request is correct
+	 */
     public function check_if_correct( Request $request, Game $game ) {
 		$places = ['id', 'a1','a2','a3','b1','b2','b3','c1','c2','c3'];
        
 		foreach ( $places as $place) {
-          
-         
-           
+  
 			if ( $game['player1'] == 1 && empty( $game[$place] ) && $request[$place] == "X") {
 				return true;
 			}
@@ -96,7 +97,10 @@ class TicTacApiController extends Controller
 		return false;
 	}
 
-    //Check turn of player
+	/**
+	 * Check turn of player and switch
+	 */
+    
     public function switch_player( Request $request, Game $game ) {
  
 		if ( $game['player1'] == 1 ){
@@ -123,6 +127,7 @@ class TicTacApiController extends Controller
 		}
 	}
 
+	
     public function check_win( Request $request, Game $game ) {
 		// win cases
 		// 	[a1, a2, a3], 
