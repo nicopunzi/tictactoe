@@ -7,7 +7,7 @@ This is a sample REST API application for tic tac toe game
 - Mysql 
 
 ## Sending Requests
-You can send POST requests to the URL below using environments like **Postman.** 
+You can send requests to the URL below using environments like **Postman.** 
 
 **Requests**
 
