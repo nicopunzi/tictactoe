@@ -21,4 +21,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('newGame',[TicTacApiController::class, 'new_game'])->name('newgame');
 Route::put('playMove/{game}', [TicTacApiController::class, 'play_move'])->name('playmove');
-// Route::delete('game/{game}', 'Api@destroy');
