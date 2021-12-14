@@ -50,7 +50,6 @@ class TicTacApiController extends Controller
 		if ( $is_finish == true) {
 			return response()->json( "Game already finish", 300 );
 		}
-        Log::info("ccococ");
        
 		$correct_place = $this->check_if_correct( $request, $game );
 		if ( $correct_place != true ) {
@@ -64,7 +63,7 @@ class TicTacApiController extends Controller
 				return response()->json( $game, 200 );
 			} else {
 				$request["game_status"] = "finish";
-                if($result==='X'){
+                if($result==='1'){
                     $request['winner'] = $game['name1'];
                 }else{
                     $request['winner'] = $game['name2'];
@@ -86,10 +85,10 @@ class TicTacApiController extends Controller
        
 		foreach ( $places as $place) {
   
-			if ( $game['player1'] == 1 && empty( $game[$place] ) && $request[$place] == "X") {
+			if ( $game['player1'] == 1 && empty( $game[$place] ) && $request[$place] == "1") {
 				return true;
 			}
-			if ( $game['player2'] == 1 && empty( $game[$place] ) && $request[$place] == "O") {
+			if ( $game['player2'] == 1 && empty( $game[$place] ) && $request[$place] == "2") {
 				return true;
 			}
 		}
