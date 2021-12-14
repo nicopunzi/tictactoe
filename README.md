@@ -3,7 +3,7 @@
 This is a sample REST API application for tic tac toe game 
 
 **Technologies **
-- Laravel Framework 5.7.24
+- Laravel
 - Mysql 
 
 ## Installation
