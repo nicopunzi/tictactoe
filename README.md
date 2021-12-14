@@ -6,16 +6,6 @@ This is a sample REST API application for tic tac toe game
 - Laravel
 - Mysql 
 
-## Installation
-* Clone the repository 
-
-* Docker Compose Up
-
-`composer install`
-
-* to migrate the db 
-
-`docker-compose up`
 ## Sending Requests
 You can send POST requests to the URL below using environments like **Postman.** 
 
