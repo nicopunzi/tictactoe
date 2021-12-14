@@ -31,11 +31,11 @@ playMove/{game}
 
 ```
 {
-"a1":"X"
+"a1":"1"
 }
 
 {
-"b1":"O"
+"b1":"2"
 }
 ```
 
@@ -59,7 +59,7 @@ playMove/{game}
 {
     "id": 6,
     "a1": null,
-    "a2": "X",
+    "a2": "1",
     "a3": null,
     "b1": null,
     "b2": null,
@@ -78,14 +78,14 @@ playMove/{game}
 {
     "id": 6,
     "a1": null,
-    "a2": "X",
+    "a2": "1",
     "a3": null,
     "b1": null,
-    "b2": "O",
-    "b3": null,
+    "b2": "2",
+    "b3": "1",
     "c1": null,
     "c2": "X",
-    "c3": "O",
+    "c3": "2",
     "player1": 1,
     "player2": 0,
     "name1": "Nicola",
