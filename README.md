@@ -21,10 +21,10 @@ You can send POST requests to the URL below using environments like **Postman.**
 
 **Requests**
 
-| Method | URL            | Header Key    | Header Value     |
-| -------|----------------|---------------|----------------- |
-| POST   | /api/game/     | Content-Type  | application/json |
-| PUT    | api/game/{id}  |               |                  |
+| Method | URL                  | Header Key    | Header Value     |
+| -------|----------------------|---------------|----------------- |
+| POST   | /api/newGame         | Content-Type  | application/json |
+| PUT    | api/playMove/{game}  |               |                  |
 
 
 **Sample Bodies**
