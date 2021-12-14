@@ -36,7 +36,7 @@ scheme blocks
 | b1 | b2 | b3 |   
 
 | c1 | c2 | c3 |  
-|______________| 
+ ______________ 
 
 1 and 2 represents the player1 and player2
 
