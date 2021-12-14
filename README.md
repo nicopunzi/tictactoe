@@ -30,13 +30,13 @@ api/newGame
 playMove/{game}
 
 scheme blocks
- ______________
+ --------------
 | a1 | a2 | a3 | 
 
 | b1 | b2 | b3 |   
 
 | c1 | c2 | c3 |  
- ______________ 
+ --------------
 
 1 and 2 represents the player1 and player2
 
